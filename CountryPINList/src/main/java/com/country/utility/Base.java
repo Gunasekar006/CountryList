@@ -1,5 +1,12 @@
 package com.country.utility;
 
-public class Base {
+import org.openqa.selenium.support.PageFactory;
+
+public abstract class Base {
+	
+	
+	public void Base() {
+		PageFactory.initElements(DriverContext.driver,this);
+	}
 
 }
